@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".pemilik_iklan.DetailKontrakanPemilikActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:id="@+id/iv_foto_kontrakan_1"
+            tools:src="@drawable/iv_kontrakan_1"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"/>
+
+        <TextView
+            android:id="@+id/tv_foto_full_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:text="Galeri Foto"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_collections_white_18dp"
+            android:drawablePadding="14dp"
+            android:textSize="17dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:background="#4d000000"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="bottom"
+            />
+    </FrameLayout>
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="250dp"-->
+        <!--android:id="@+id/iv_foto_kontrakan"-->
+        <!--tools:src="@drawable/iv_kontrakan_1"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:padding="5dp"-->
+        <!--android:layout_marginBottom="1dp"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_edit_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_edit_white" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_trash_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:src="@drawable/ic_delete" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_status_kontrakan_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Status"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_waktu_post_kontrakan_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Waktu Post"
+        android:layout_marginBottom="5dp"
+        android:textStyle="italic"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_alamat_kontrakan_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Alamat"
+        android:layout_marginBottom="5dp"
+        android:textColor="@color/tv_informasi"
+        android:layout_weight="0.5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama_kontrakan_1"
+        android:text="Kontrakan Galau"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_harga_kontrakan_1"
+        android:text="Rp. -"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama_deskripsi_kontrakan_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Deskripsi Kontrakan:"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_deskripsi_kontrakan_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Kontrakan ini merupakan kontrakan yang terdapat di sebelah gunung belakang rumah ini."
+        android:layout_marginBottom="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama_fasilitas_kontrakan_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Fasilitas Kontrakan:"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_fasilitas_kontrakan_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Fasilitas Kontrakan antara lain Lemari, Televisi, Rak, dan lain lain."
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:id="@+id/tv_disewakan_oleh_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Disewakan Oleh:"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_foto_pemilik_1"
+            android:src="@drawable/ic_beranda"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/tv_nama_pemilik_1"
+            android:layout_toEndOf="@id/iv_foto_pemilik_1"
+            android:layout_toRightOf="@id/iv_foto_pemilik_1"
+            android:textSize="13sp"
+            android:drawableStart="@drawable/ic_username"
+            android:text="Nama Pemilik"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/tv_no_handphone_pemilik_1"
+            android:layout_toEndOf="@id/iv_foto_pemilik_1"
+            android:layout_toRightOf="@id/iv_foto_pemilik_1"
+            android:layout_below="@+id/tv_nama_pemilik_1"
+            android:textSize="13sp"
+            android:drawableStart="@drawable/ic_no_handphone"
+            android:text="Nomor Handphone Pemilik"
+            android:layout_marginBottom="4dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

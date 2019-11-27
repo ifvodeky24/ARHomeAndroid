@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Minimal:"
+        android:textStyle="bold"
+        android:id="@+id/tv_harga_minimal" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Harga Minimal"
+            android:id="@+id/edt_harga_min_kontrakan_kos"
+            android:drawableLeft="@drawable/ic_keyboard"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Harga Maksimal:"
+        android:textStyle="bold"
+        android:id="@+id/tv_harga_maksimal"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Harga Max"
+        android:id="@+id/edt_harga_max_kontrakan_kos"
+        android:drawableLeft="@drawable/ic_keyboard"/>
+
+    </android.support.design.widget.TextInputLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Rating:"-->
+        <!--android:textStyle="bold"-->
+        <!--android:id="@+id/tv_rating"/>-->
+
+    <!--<android.support.v7.widget.AppCompatRatingBar-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/rt_bar"-->
+        <!--android:theme="@style/RatingBar"-->
+        <!--android:numStars="5"-->
+        <!--android:rating="2.5"-->
+        <!--android:stepSize="0.5"/>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_rate"-->
+        <!--android:textSize="17dp"-->
+        <!--android:textStyle="bold"-->
+        <!--android:text="Skor : "/>-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_lacak_filter"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
+        android:text="Lacak"/>
+
+</LinearLayout>

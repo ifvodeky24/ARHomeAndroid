@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <!--<item-->
+            <!--android:id="@+id/nav_beranda"-->
+            <!--android:icon="@drawable/ic_beranda"-->
+            <!--android:title="Beranda" />-->
+        <item
+            android:id="@+id/nav_lacak_lokasi"
+            android:icon="@drawable/ic_lacak_lokasi"
+            android:title="Lacak Lokasi" />
+        <item
+            android:id="@+id/nav_daftar_kontrakan_kos"
+            android:icon="@drawable/ic_round_daftar_kontrakan_kos"
+            android:title="Daftar Kontrakan dan Kos" />
+        <item
+            android:id="@+id/nav_rekomendasi"
+            android:icon="@drawable/ic_rekomendasi"
+            android:title="Rekomendasi"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_tambah_kontrakan_kos"
+            android:icon="@drawable/ic_tambah_kontrakan_kos"
+            android:title="Tambah Kontrakan dan Kos"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_riwayat_pemesanan"
+            android:icon="@drawable/ic_riwayat_pemesanan"
+            android:title="Riwayat Pemesanan"
+            android:visible="false"/>
+
+    </group>
+
+    <item android:title="ARHome">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/nav_pengaturan"-->
+                <!--android:icon="@drawable/ic_pengaturan"-->
+                <!--android:title="Pengaturan"-->
+                <!--android:visible="false"/>-->
+
+            <item
+                android:id="@+id/nav_tentang"
+                android:icon="@drawable/ic_tentang"
+                android:title="Tentang" />
+
+            <item
+                android:id="@+id/nav_petunjuk"
+                android:icon="@drawable/ic_petunjuk"
+                android:title="Petunjuk Penggunaan" />
+        </menu>
+    </item>
+</menu>

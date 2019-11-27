@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common.PetunjukPenggunaanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <LinearLayout
+                android:id="@+id/ll_pengaturan_akun"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:paddingBottom="21dp"
+                android:paddingStart="8dp"
+                android:background="@drawable/bg_pressed_center"
+                android:paddingTop="21dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Q: Bagaimana cara mengaktifkan fitur AR untuk mencari rumah kontrakan atau kos terdekat? "
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:padding="3dp"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:paddingBottom="21dp"
+                android:paddingStart="8dp"
+                android:paddingTop="21dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pada bagian beranda, klik garis tiga di sisi kiri atas layar untuk membuka tampilan menu. Selanjutnya klik lacak lokasi, lalu pilih augmented reality kontrakan atau kos. Setelah itu arahkan kamera ke segala arah untuk mencari rumah kontrakan atau kos yang terdekat"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:padding="3dp"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11.7dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:paddingBottom="21dp"
+                android:paddingStart="8dp"
+                android:background="@drawable/bg_pressed_center"
+                android:paddingTop="21dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Q: Bagaimana cara memesan rumah kontrakan dan kos?"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:padding="3dp"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:orientation="horizontal"
+                android:paddingBottom="21dp"
+                android:paddingStart="8dp"
+                android:paddingTop="21dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Pertama, anda mesti login sebagai pengguna. Selanjutnya pada bagian beranda, klik garis tiga di sisi kiri atas layar untuk membuka tampilan menu. Setelah itu pilih daftar rumah kontrakan dan kos. Pilih salah satu rumah kontrakan atau kos untuk menampilkan detail. Pada bagian bawah, klik booking."
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:padding="3dp"
+                    android:layout_weight="0.5"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

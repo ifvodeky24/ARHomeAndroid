@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.idw.arhome">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_icon"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".common.PetunjukPenggunaanActivity"
+            android:parentActivityName=".common.MainActivity">
+        </activity>
+        <activity
+            android:name=".pengguna.DetailKosARActivity"
+            android:parentActivityName=".PoiBrowserActivity" />
+        <activity
+            android:name=".pengguna.DetailKontrakanARActivity"
+            android:parentActivityName=".PoiBrowserActivity2" />
+        <activity
+            android:name=".PoiBrowserActivity2"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".pemilik_iklan.DaftarKontrakanKosPemilikActivity"
+            android:parentActivityName=".common.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pemilik_iklan.DetailKontrakanPemilikActivity"
+            android:parentActivityName=".pemilik_iklan.DaftarKontrakanKosPemilikActivity" />
+        <activity
+            android:name=".pemilik_iklan.DetailKosPemilikActivity"
+            android:parentActivityName=".pemilik_iklan.DaftarKontrakanKosPemilikActivity" />
+        <activity
+            android:name=".pemilik_iklan.EditKosActivity"
+            android:parentActivityName=".pemilik_iklan.DetailKosPemilikActivity" />
+        <activity
+            android:name=".pemilik_iklan.EditKontrakanActivity"
+            android:parentActivityName=".pemilik_iklan.DetailKontrakanPemilikActivity" />
+        <activity
+            android:name=".pengguna.UbahPasswordPenggunaActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".pemilik_iklan.UbahPasswordPemilikActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".pemilik_iklan.EditProfilPemilikActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".pengguna.EditProfilPenggunaActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".pengguna.DetailRekomendasiKosActivity"
+            android:parentActivityName=".pengguna.RekomendasiKontrakanKosActivity" />
+        <activity
+            android:name=".pengguna.DetailRekomendasiKontrakanActivity"
+            android:parentActivityName=".pengguna.RekomendasiKontrakanKosActivity" />
+        <activity
+            android:name=".pengguna.RekomendasiKontrakanKosActivity"
+            android:parentActivityName=".common.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pengguna.RegisterPenggunaActivity"
+            android:parentActivityName=".pemilik_iklan.LoginPemilikActivity" />
+        <activity
+            android:name=".pemilik_iklan.RegisterPemilikActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".common.LacakMapsActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".common.DetailPemesananKosActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".common.DetailPemesananKontrakanActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".common.PemesananKontrakanKosActivity"
+            android:parentActivityName=".common.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.TentangActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".common.DetailKosActivity"
+            android:parentActivityName=".common.DaftarKontrakanKosActivity" />
+        <activity
+            android:name=".common.DetailKontrakanActivity"
+            android:parentActivityName=".common.DaftarKontrakanKosActivity" />
+        <activity
+            android:name=".pemilik_iklan.TambahKosActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".pemilik_iklan.TambahKontrakanActivity"
+            android:parentActivityName=".common.MainActivity" />
+        <activity
+            android:name=".pengguna.LoginPenggunaActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".pemilik_iklan.LoginPemilikActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".common.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".common.MessageActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".common.DaftarKontrakanKosActivity"
+            android:parentActivityName=".common.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PoiBrowserActivity"
+            android:screenOrientation="landscape" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/MAPS_API_KEY" />
+
+        <receiver
+            android:name=".reminder.DailyAlarmReminderKos"
+            android:enabled="true"
+            android:exported="true" />
+        <receiver
+            android:name=".reminder.DailyAlarmReminderKontrakan"
+            android:enabled="true"
+            android:exported="true" />
+    </application>
+
+</manifest>

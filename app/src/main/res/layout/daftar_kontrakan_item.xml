@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:id="@+id/cv_kontrakan"
+    tools:cardElevation="3dp"
+    tools:cardUseCompatPadding="true"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginBottom="4dp"
+    card_view:cardCornerRadius="4dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="90dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_foto_kontrakan"
+            android:src="@drawable/ic_beranda"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear1"
+            android:layout_toEndOf="@id/iv_foto_kontrakan"
+            android:layout_toRightOf="@id/iv_foto_kontrakan"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="@dimen/activity_vertical_margin">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_beranda" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_nama_kontrakan"
+                android:fontFamily="@font/_mregular"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:text="Nama Kontrakan"
+                android:layout_marginBottom="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear2"
+            android:layout_below="@+id/linear1"
+            android:layout_toEndOf="@id/iv_foto_kontrakan"
+            android:layout_toRightOf="@id/iv_foto_kontrakan"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_harga" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_harga_kontrakan"
+                android:textSize="13sp"
+                android:fontFamily="@font/mlight"
+                android:textStyle="bold"
+                android:text="Harga Kontrakan"
+                android:layout_marginBottom="2dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/linear3"
+            android:layout_below="@+id/linear2"
+            android:layout_toEndOf="@id/iv_foto_kontrakan"
+            android:layout_toRightOf="@id/iv_foto_kontrakan"
+            android:layout_marginLeft="7dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_alamat" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/tv_alamat_kontrakan"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:text="Alamat Kontrakan"
+                android:fontFamily="@font/mlight" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".common.DetailPemesananKontrakanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:id="@+id/iv_foto_pemesanan_kontrakan"
+            android:src="@drawable/iv_kontrakan_1"
+            android:scaleType="fitXY"
+            android:padding="10dp"
+            android:layout_marginBottom="13dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_waktu_pemesanan_kontrakan"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Waktu Pemesanan Kontrakan"
+            android:layout_marginBottom="5dp"
+            android:textStyle="italic"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_alamat_kontrakan"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Alamat Kontrakan"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/tv_informasi"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_nama_kontrakan"
+            android:text="Nama Kontrakan"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_harga_kontrakan"
+            android:text="Rp. -Harga"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_id_pemesanan_kontrakan"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Id Pemesanan Kontrakan"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_status_kontrakan"
+            android:background="@color/tv_informasi"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Status"
+            android:padding="2dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/tv_dipesan_oleh"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Dipesan Oleh:"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="4dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_foto_pengguna"
+                android:src="@drawable/ic_beranda"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/tv_nama_pengguna"
+                android:layout_toEndOf="@id/iv_foto_pengguna"
+                android:layout_toRightOf="@id/iv_foto_pengguna"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/ic_username"
+                android:text="Nama Pemesan"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/tv_no_handphone_pengguna"
+                android:layout_toEndOf="@id/iv_foto_pengguna"
+                android:layout_toRightOf="@id/iv_foto_pengguna"
+                android:layout_below="@+id/tv_nama_pengguna"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/ic_no_handphone"
+                android:text="Nomor Handphone Pemesan"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:id="@+id/tv_disewakan_oleh"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:text="Disewakan Oleh:"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="4dp"
+                android:scaleType="centerCrop"
+                android:id="@+id/iv_foto_pemilik"
+                android:src="@drawable/ic_beranda"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/tv_nama_pemilik"
+                android:layout_toEndOf="@id/iv_foto_pemilik"
+                android:layout_toRightOf="@id/iv_foto_pemilik"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/ic_username"
+                android:text="Nama Pemilik"
+                android:layout_marginBottom="4dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="7dp"
+                android:id="@+id/tv_no_handphone_pemilik"
+                android:layout_toEndOf="@id/iv_foto_pemilik"
+                android:layout_toRightOf="@id/iv_foto_pemilik"
+                android:layout_below="@+id/tv_nama_pemilik"
+                android:textSize="13sp"
+                android:drawableStart="@drawable/ic_no_handphone"
+                android:text="Nomor Handphone Pemilik"
+                android:layout_marginBottom="4dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_update_dalam_pemesanan_kontrakan"
+            android:text="Update Pemesanan"
+            android:layout_weight="0.5"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_update_selesai_kontrakan"
+            android:text="Update Selesai"
+            android:layout_weight="0.5"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_hapus_pemesanan_kontrakan"
+            android:text="Hapus Pemesanan"
+            android:layout_weight="0.5"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_batal_pemesanan_kontrakan"
+            android:text="Batalkan Pemesanan"
+            android:layout_weight="0.5"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_button"
+            android:textColor="@color/white"
+            android:visibility="gone"
+            />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

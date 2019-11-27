@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".pemilik_iklan.DetailKosPemilikActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/iv_foto_kos_1"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/iv_kos_1" />
+
+        <TextView
+            android:id="@+id/tv_foto_full_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="9dp"
+            android:text="Galeri Foto"
+            android:gravity="center_vertical"
+            android:drawableLeft="@drawable/ic_collections_white_18dp"
+            android:drawablePadding="14dp"
+            android:textSize="17dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small"
+            android:background="#4d000000"
+            android:textColor="@color/white"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="@dimen/activity_vertical_margin"
+            android:layout_gravity="bottom"
+            />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="right">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_edit_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="10dp"
+            android:clickable="true"
+            android:src="@drawable/ic_edit_white" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_trash_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:clickable="true"
+            android:src="@drawable/ic_delete" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_stok_kamar_kos_1"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:text="Stok Kamar"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_waktu_post_kos_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Waktu Post"
+        android:layout_marginBottom="5dp"
+        android:textStyle="italic"
+        android:layout_weight="0.5"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_jenis_kos_1"
+            android:layout_marginLeft="10dp"
+            android:text="Jenis Kos"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.5"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_pembatas_1"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:text="-"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_alamat_kos_1"
+            android:layout_marginLeft="3dp"
+            android:text="Alamat Kos"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/tv_informasi"
+            android:layout_weight="0.5"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama_kos_1"
+        android:text="Kos Galau"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_harga_kos_1"
+        android:text="Rp. -"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama_deskripsi_kos_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Deskripsi Kos:"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_deskripsi_kos_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Kos ini merupakan kos yang terdapat di sebelah gunung belakang rumah ini."
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_nama_fasilitas_kos_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Fasilitas Kos:"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_fasilitas_kos_1"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Fasilitas Kos antara lain Lemari, Televisi, Rak, dan lain lain."
+        android:layout_marginBottom="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:id="@+id/tv_disewakan_oleh"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:text="Disewakan Oleh:"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginBottom="4dp"
+            android:scaleType="centerCrop"
+            android:id="@+id/iv_foto_pemilik_1"
+            android:src="@drawable/ic_beranda"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/tv_nama_pemilik_1"
+            android:layout_toEndOf="@id/iv_foto_pemilik_1"
+            android:layout_toRightOf="@id/iv_foto_pemilik_1"
+            android:textSize="13sp"
+            android:drawableStart="@drawable/ic_username"
+            android:text="Nama Pemilik"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="7dp"
+            android:id="@+id/tv_no_handphone_pemilik_1"
+            android:layout_toEndOf="@id/iv_foto_pemilik_1"
+            android:layout_toRightOf="@id/iv_foto_pemilik_1"
+            android:layout_below="@+id/tv_nama_pemilik_1"
+            android:textSize="13sp"
+            android:drawableStart="@drawable/ic_no_handphone"
+            android:text="Nomor Handphone Pemilik"
+            android:layout_marginBottom="4dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

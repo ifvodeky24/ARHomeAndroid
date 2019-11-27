@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3c5399</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="white">#FFFFFF</color>
+    <color name="custom_button">#B22222</color>
+    <color name="tv_informasi">#4682B4</color>
+    <color name="gray_light">#fafafa</color>
+    <color name="background">#dddddd</color>
+    <color name="duskyellow">#DAA520</color>
+    <color name="light_gray">#D3D3D3</color>
+    <color name="blakPrimary">#21272C</color>
+    <color name="grayPressed">#E3E2E2</color>
+    <color name="grayPrimary">#8D8D8D</color>
+    <color name="indigo3">#fcfcfc</color>
+</resources>

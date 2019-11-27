@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "547523933524",
+    "firebase_url": "https://idw-project.firebaseio.com",
+    "project_id": "idw-project",
+    "storage_bucket": "idw-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:547523933524:android:2663266fa3ffaa1b",
+        "android_client_info": {
+          "package_name": "com.project.idw.arhome"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "547523933524-i0a5qb4ivpcfvjn2krrds9hil7d1q9st.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.idw.arhome",
+            "certificate_hash": "e5d480e0511565204871d6238c40eee2cfc31c1a"
+          }
+        },
+        {
+          "client_id": "547523933524-suem8urr2gujlqql5o76ph5v636npko3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADxtkrv67KjLWNCYPv2NU9v9JZUb_vozA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "547523933524-suem8urr2gujlqql5o76ph5v636npko3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
