@@ -209,7 +209,7 @@ public class RegisterPemilikActivity extends AppCompatActivity {
 
         if (username.equalsIgnoreCase("")){
             isEmpty = true;
-            Toast.makeText(getApplicationContext(), "Username masih kosong", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Username  masih kosong", Toast.LENGTH_SHORT).show();
         }
 
         if (password.equalsIgnoreCase("")){
